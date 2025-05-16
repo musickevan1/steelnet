@@ -76,3 +76,25 @@ Missouri State University
 - 🔗 [LinkedIn](https://www.linkedin.com/in/evan-musick-49ba15187)
 - 📝 [Medium](https://medium.com/@evanmusick.dev)
 - 💻 [GitHub](https://github.com/musickevan1)
+
+---
+
+## 📷 Results Images
+
+### SteelNet Model Diagram
+![SteelNet Model Diagram](results/steelnet_model_diagram.png)
+
+### SteelNet Training Curve
+![SteelNet Training Curve](results/steelnet_training_curve.png)
+
+### SteelNet Confusion Matrix
+![SteelNet Confusion Matrix](results/steelnet_confusion_matrix.png)
+
+### HOG + SVM Confusion Matrix
+![HOG + SVM Confusion Matrix](results/hog_svm_confusion_matrix.png)
+
+### HOG + SVM Per-Class Metrics
+![HOG + SVM Per-Class Metrics](results/hog_svm_per_class_metrics.png)
+
+### F1 Score Comparison
+![F1 Score Comparison](results/f1_score_comparison.png)
