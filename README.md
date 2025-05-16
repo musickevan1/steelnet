@@ -1,30 +1,46 @@
-# SteelNet: Defect Detection in Steel with CNNs
+# SteelNet: CNN-Based Defect Detection in Manufacturing Images
 
-## Overview
-This project implements defect detection in steel surfaces using the NEU-DET dataset. It compares a deep learning approach (SteelNet CNN) with a traditional machine learning baseline (HOG+SVM). The objective is to accurately classify different types of surface defects to improve quality control in steel manufacturing.
+This project presents **SteelNet**, a Convolutional Neural Network model built using transfer learning with ResNet18, designed to automate the classification of six steel surface defects from the NEU-DET dataset. The model is evaluated against a classical machine learning approach using Histogram of Oriented Gradients (HOG) combined with a Support Vector Machine (SVM) classifier.
 
-## Dataset
-The NEU-DET dataset contains images of six types of steel surface defects. The dataset is publicly available [here](https://github.com/erhwenkuo/NEU-DET).
+---
 
-## Models and Results
-| Model          | Accuracy   | F1 Score  |
-|----------------|------------|-----------|
-| HOG+SVM        | 92.44%     | 92.31%    |
-| SteelNet (CNN) | 93.12%     | 92.87%    |
+### 📊 Key Results
 
-## Models and Results (Detailed Metrics)
+| Model         | Accuracy | F1 Score |
+|---------------|----------|----------|
+| HOG + SVM     | 92.44%   | 0.9231   |
+| SteelNet CNN  | 89.6%    | 0.91     |
 
-| Defect Type     | F1 Score (SteelNet) | F1 Score (HOG+SVM) |
-|-----------------|---------------------|--------------------|
-| Crazing         | 0.92                | 0.9494             |
-| Inclusion       | 0.86                | 0.9474             |
-| Patches         | 0.95                | 0.8489             |
-| Pitted Surface  | 0.91                | 0.8784             |
-| Rolled-in Scale | 0.87                | 0.9934             |
-| Scratches       | 0.93                | 0.9211             |
+---
 
-## Run Instructions
+### 🛠 Features
 
+- **Preprocessing**: Image resizing (224x224), normalization, and augmentation (flip, rotation)
+- **Architecture**: ResNet18 with a custom classification head for 6 defect classes
+- **Training**: Adam optimizer, Cross-Entropy loss, LR scheduling via ReduceLROnPlateau
+- **Classical Baseline**: HOG feature extraction + SVM with RBF kernel
+- **Evaluation**: Accuracy, macro-averaged F1-score, per-class metrics
+
+---
+
+### 📂 Dataset
+
+**NEU-DET**: 1,800 grayscale images (6 classes × 300 images), available at  
+🔗 [Kaggle NEU Surface Defect Dataset](https://www.kaggle.com/datasets/kaustubhdikshit/neu-surface-defect-database)
+
+---
+
+### 📌 Highlights from Report
+
+- SteelNet outperformed HOG + SVM on defect types like *patches* and *pitted surface*
+- HOG + SVM showed superior results on *crazing*, *inclusion*, and *rolled-in scale*
+- Clear signs of early overfitting in CNN after ~8 epochs
+- Future work: Grad-CAM explainability, ensemble models, real-time deployment
+
+---
+
+### 📄 License
+[MIT License](LICENSE)
 ### SteelNet CNN
 1. Install dependencies:
 ```bash
