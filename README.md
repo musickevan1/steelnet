@@ -81,8 +81,6 @@ Missouri State University
 
 ## 📷 Results Images
 
-### SteelNet Model Diagram
-![SteelNet Model Diagram](results/steelnet_model_diagram.png)
 
 ### SteelNet Training Curve
 ![SteelNet Training Curve](results/steelnet_training_curve.png)
