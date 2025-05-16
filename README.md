@@ -16,7 +16,7 @@ The NEU-DET dataset contains images of six types of steel surface defects. The d
 
 | Defect Type     | F1 Score (SteelNet) | F1 Score (HOG+SVM) |
 |-----------------|---------------------|--------------------|
-| Crazing         | 0.92                | 0.9494             |
+| Crazing         | 0.91                | 0.9494             |
 | Inclusion       | 0.86                | 0.9474             |
 | Patches         | 0.95                | 0.8489             |
 | Pitted Surface  | 0.91                | 0.8784             |
