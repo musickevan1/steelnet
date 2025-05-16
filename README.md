@@ -40,7 +40,8 @@ This project presents **SteelNet**, a Convolutional Neural Network model built u
 ---
 
 ### 📄 License
-[MIT License](LICENSE)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 ### SteelNet CNN
 1. Install dependencies:
 ```bash
@@ -67,9 +68,6 @@ steel-defect-detection/
 ├── requirements.txt            # Dependencies
 └── NEU-DET/                    # Dataset directory (not included)
 ```
-
-## License
-This project is licensed under the MIT License.
 
 ## Author
 Evan Musick  
