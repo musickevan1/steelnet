@@ -72,3 +72,7 @@ steel-defect-detection/
 ## Author
 Evan Musick  
 Missouri State University
+
+- 🔗 [LinkedIn](https://www.linkedin.com/in/evan-musick-49ba15187)
+- 📝 [Medium](https://medium.com/@evanmusick.dev)
+- 💻 [GitHub](https://github.com/musickevan1)
